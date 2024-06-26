@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM,CREATE,EDIT,REMOVE ELEMENT </title>
+</head>
+<body style="background-color:#212121 ; color:#fff">
+  <ul class="language">
+      <li>javascript</li>
+  </ul>
+
+</body>
+<script>
+
+  ////////////////////////////////////////
+const li = document.createElement('li')
+ //li.innerText="node js"
+const newText = document.createTextNode('node js')
+   li.appendChild(newText)
+const li2 = document.createElement('li')
+const textNew = document.createTextNode('react js')
+  li2.appendChild(textNew)
+//document.querySelector('ul').appendChild(li).appendChild(li2)
+document.querySelector('.language').appendChild(li).appendChild(li2)
+
+///////////////////////////////////////////////////////////
+
+function addLangName (langname){
+  const li = document.createElement ("li")
+  const newText = document.createTextNode(langname)
+    li.appendChild(newText)
+  
+  // document.querySelector('ul').appendChild(li)
+  document.querySelector('.language').appendChild(li)
+}
+addLangName('node js')
+addLangName ("react js")
+addLangName ('express js')
+
+
+///////////////////////////////////////////////////////////////
+
+function addLangName (langname){
+  const li = document.createElement ("li")
+   li.appendChild(document.createTextNode(langname))
+  
+  // document.querySelector('ul').appendChild(li)
+  document.querySelector('.language').appendChild(li)
+}
+addLangName('node js')
+addLangName ("react js")
+addLangName ('express js')
+
+
+//////////////////////////////////////////////////////////////////////////edit 
+
+const editElement = document.querySelector('li:nth-child(2)')
+const elemt = document.createElement('li')
+elemt.appendChild ( document.createTextNode('python') )
+editElement.replaceWith(elemt)
+
+
+const firstLangyage = document.querySelector('li:first-child')
+const newElement = document.createElement ('li')
+newElement.appendChild(document.createTextNode('ruby'))
+firstLangyage.replaceWith(newElement)
+
+/////////////////////////////////////////////////////////////////////// remove 
+const FirstLngugae = document.querySelector('li:first-child')
+FirstLngugae.remove()
+const lastLngugae = document.querySelector('li:last-child')
+lastLngugae.remove()
+
+ </script>
+ </html>

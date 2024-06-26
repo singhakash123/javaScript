@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM,CREATE ELEMENT</title>
+</head>
+<body style="background-color:#212121 ; color:#fff">
+    
+</body>
+ <script >
+   const div = document.createElement('div')
+   //div.innerHTML = "akash singh chauhan"
+   //div.innerText = "akash singh chauhan"
+   const textNode = document.createTextNode('akash singh chauhan')
+   div.appendChild(textNode)
+   //div.className = "title"
+   div.setAttribute('title',"generated title")
+   //div.id = Math.round((Math.random()*10)+1)
+   const randomId =Math.round((Math.random()*10)+1).toString()
+   div.setAttribute('id',randomId)
+   div.style.backgroundColor="blue"
+   div.style.padding="15px"
+   div.style.borderRadius="15px"
+   div.style.textAlign="center"
+   
+document.body.appendChild(div)
+
+///////////////////////////////////////////////  more optmize way 
+ const divElement = document.createElement('div')
+ divElement.appendChild(document.createTextNode('akash singh chauhan'))
+ divElement.setAttribute('title',"generated title")
+ divElement.setAttribute('id',Math.round((Math.random()*10)+1))
+ divElement.style.backgroundColor="red"
+ divElement.style.padding = "15px"
+ divElement.style.borderRadius="15px"
+ divElement.style.textAlign="center"
+
+
+ document.body.appendChild(divElement)
+
+
+
+
+
+
+
+
+
+
+
+ </script>
+</html>

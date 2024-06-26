@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+   <h2>Lorem ipsum dolor sit amet.</h2>
+   <button id="start"> start </button>
+   <button id="stop">  stop  </button>
+</body>
+<script>
+  // const changeMe = function (){
+  //   document.querySelector('h2').textContent="rohit singh chauhan"
+  // }
+  //   setInterval(changeMe,2000)
+
+
+  // const myText = function (){
+  //   document.querySelector('h2').textContent = "javascript base is important"
+  // }
+
+  // let stopText ;
+  // const intertvelChanger = function(){
+  //     document.querySelector('#start').addEventListener('click',function(){
+  //     stopText= setInterval(myText,2000)
+  //     })
+  // }
+  // intertvelChanger()
+
+  // const clearInterText =function(){
+  //   document.querySelector('#stop').addEventListener('click',function(){
+  //     clearInterval(stopText)
+  //   })}
+  // clearInterText()
+
+  const changeText = function (){
+    document.querySelector('h2').textContent = "javascript should be strong to learn other language"
+  }
+  
+   let clearText;
+   document.querySelector('#start').addEventListener('click',function(){
+    clearText = setInterval(changeText,2000)
+   })
+ 
+   document.querySelector('#stop').addEventListener('click',function(){
+      console.log ('stopped here only')
+     clearInterval(clearText)
+   })
+
+
+
+</script>
+</html>

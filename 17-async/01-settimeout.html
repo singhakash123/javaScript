@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Lorem ipsum dolor sit amet.</h1>
+  <button id="start">start</button>
+  <button id="stop">stop</button>
+</body>
+<script>
+
+
+// const refrence =setTimeout(function(){
+//   document.querySelector('h1').textContent="rohit singh chauhan"
+// },2000)
+
+// clearTimeout(refrence)
+
+//  const intervaltextchange = function (){
+//   document.querySelector('h1').textContent="akash singh chauhan"
+//  }
+ 
+//  let clearText;
+//  const changeText = function (){
+//   document.querySelector('#start').addEventListener('click',function(){
+//   clearText= setInterval(intervaltextchange,1000)
+//   })
+//  }
+//   changeText()
+//  const cleartexter = function(){
+//   document.querySelector('#stop').addEventListener('click',function(){
+//     clearInterval(clearText)
+//   })
+//  }
+
+//  cleartexter()
+
+const changeText = function (){
+  document.querySelector('h1').textContent = "akash singh chauhan "
+}
+
+let clearText;
+document.querySelector('#start').addEventListener('click',function(){
+ clearText= setTimeout(changeText,2000)
+})
+
+document.querySelector('#stop').addEventListener('click',function(){
+    console.log ('akash singh chauhan')
+      clearTimeout(clearText)
+})
+
+
+
+
+
+</script>
+
+</html>

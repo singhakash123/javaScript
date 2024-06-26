@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnml Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+  <script>
+    document.getElementById('owl').onclick=function(){
+      alert('successfully clicked ')
+    }
+   //  notes : dont use onclick method ,it doesnt give facility of propogation 
+
+   document.getElementById('images').addEventListener('click',function(e){
+         console.log ("clicked inside the ul",Math.round((Math.random()*10+1)))
+   },false)
+   
+  document.getElementById('owl').addEventListener('click',function(e){
+          console.log ('clicked inside the owl ', Math.round((Math.random()*10+1))  )
+          e.stopPropagation()
+  },false)
+  // notes : true represent to Event Capturing,and false represent to event bubbling 
+ //  event bubbling means (child to parent) and Event Capturing means (parent to child 
+ //  to stop event propgation use stopPropagation() Event Method
+
+document.getElementById('google').addEventListener('click',function(e){
+   console.log ('clicked inside the google ')
+   e.stopPropagation()
+   e.preventDefault() 
+})
+// note :preventDefault Method: A method used to prevent the default action associated with an event from occurring, such as preventing a form submission or a link from being followed.
+
+
+
+/////////////////////////////////  how to remove any images ////////////////////
+
+document.getElementById('images').addEventListener('click',function (e){
+   console.log ( e.target.parentNode)
+   console.log (e.target.tagName)
+   if (e.target.tagName==="IMG") {
+   let removeit = e.target.parentNode
+       removeit.remove()
+   }
+
+})
+
+   //removeIt.parentNode.removeChild(removeIt)
+
+
+   // target // event.target: A property that references the element that triggered the event, allowing you to access and manipulate the element where the event originally occurred.
+
+   /*
+    Syntax
+            : event.target
+   Technical Details
+              Return Value:	An Object.The object where the event originally occured.
+
+   exp:01: 
+        Get the name of the element where the event occurred:
+        let text = event.target.tagName;
+  
+  exp:02:
+       Get the element where the event occurred:
+       const element = event.target;
+  exp:03:
+      
+   */
+  </script>
+</html>
