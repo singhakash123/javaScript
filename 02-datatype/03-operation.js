@@ -5,7 +5,7 @@ let negValue = -value
 // console.log (2+2); // result:4
 // console.log (2-2); // result:0
 // console.log (2*2)  // result : 4
-// console.log (2**3) // result :8
+// console.log (2**3) // result :8  
 // console.log (2/3) //  (division) // rsult :0.66666
 // console.log (2%3)  // (module)   // result : 2
 

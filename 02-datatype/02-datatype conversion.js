@@ -1,19 +1,19 @@
 let fullName = "akash"
 
-// console.log (typeof score)
-// console.log (typeof (score))
+// console.log (typeof fullName)
+// console.log (typeof (fullName))
 
                                         // conversion into number 
 
-let  score = undefined
+let  score = ""
 let valueInNumber = Number (score)
 // console.log (typeof valueInNumber)
-// console.log(valueInNumber)
+// console.log(valueInNumber);
 
 // "33" => 33
 // "33abc" => NaN
 //  true => 1 , false => 0
-// "akash" => NaN
+// "akash" => NaN , "" =>0
 // null => 0
 // undefined => NaN
 
@@ -22,8 +22,8 @@ let valueInNumber = Number (score)
 let isLoggedIn = "akash"
 let booleanIsLoggedIn = Boolean (isLoggedIn)
 
-// console.log (typeof booleanIsLoggedIn)
-// console.log (booleanIsLoggedIn)
+console.log (typeof booleanIsLoggedIn)
+console.log (booleanIsLoggedIn)
 
 // 1 => true   , 0 => false 
 // "" => false 

@@ -14,10 +14,10 @@ console.log ('hitesh')
 
 ///   data type from here 
 
-let name = "akash";
-let isLoggedIn = true;
-let age = 18 ;
-let state ;
+let name = "akash";    // string 
+let isLoggedIn = true;  // boolean
+let age = 18 ;         // number 
+let state ;            // undefined 
 
 // number = 2 to the power 53
 // bigint 
