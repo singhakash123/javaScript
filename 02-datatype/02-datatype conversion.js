@@ -1,7 +1,7 @@
 let fullName = "akash"
 
 // console.log (typeof fullName)
-// console.log (typeof (fullName))
+// console.log (typeof (fullName))  // by using parantheses 
 
                                         // conversion into number 
 

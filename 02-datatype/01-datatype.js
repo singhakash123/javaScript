@@ -19,8 +19,8 @@ let isLoggedIn = true;  // boolean
 let age = 18 ;         // number 
 let state ;            // undefined 
 
-// number = 2 to the power 53
-// bigint 
+// number => 2 to the power 53
+// bigint => n
 // string => ""
 // boolean => true/false
 // null // standalone value   // null is an empty value , null is not zero
@@ -33,7 +33,7 @@ let state ;            // undefined
 
 console.log (typeof "akash")
 console.log (typeof age)
-console.log (typeof undefined)
+console.log (typeof (undefined))
 console.log (typeof null)
 
 
