@@ -5,9 +5,10 @@ let negValue = -value
 // console.log (2+2); // result:4
 // console.log (2-2); // result:0
 // console.log (2*2)  // result : 4
-// console.log (2**3) // result :8  
+// console.log (2**3) // result :8   // Exponentiation (**)
 // console.log (2/3) //  (division) // rsult :0.66666
 // console.log (2%3)  // (module)// remainder // result : 2
+
 
 let str1 = "akash"
 let str2 = " singh"
@@ -16,10 +17,11 @@ let str3 = str1 + str2
 
 
 console.log ("1" + 2)
+console.log ( 1 + "2")
 console.log ('1' + '2')
 console.log ("1" + 2 + 3)
-console.log ("1" +( 2 + 3)) // follow this type
-console.log (2 + 3 + "4")
+console.log ("1" +( 2 + 3)) // follow this type // this is best to write because it is a readble code 
+console.log (2 + 3 + "4")   
 console.log ((2 + 3) + "4") // follow this type
 
 

@@ -13,7 +13,7 @@ let userMail ;
 
 const id = Symbol ('124')
 const anotherId = Symbol ('124')
-console.log (id===anotherId)
+console.log (id===anotherId)  // output:false 
 
 
 const bigNumber = 286748043987439n
@@ -37,14 +37,14 @@ const bigNumber = 286748043987439n
  }
 
 
- console.log (typeof fullName)
- console.log (typeof score)
- console.log (typeof scoreValue)
- console.log (typeof isLoggedIn)
- console.log (typeof outSideTemp)
- console.log (typeof userMail)
- console.log (typeof id)
- console.log (typeof anotherId)
- console.log (typeof arrayHeros)
- console.log (typeof myObj)
- console.log (typeof myFun)
+ console.log (typeof fullName)  // output : string
+ console.log (typeof score) // output : number
+ console.log (typeof scoreValue) // output : number 
+ console.log (typeof isLoggedIn) // output : boolean 
+ console.log (typeof outSideTemp) // output : object 
+ console.log (typeof userMail) // output : undefined 
+ console.log (typeof id) // output : symbol 
+ console.log (typeof anotherId) // output : symbol 
+ console.log (typeof arrayHeros) // output : object  
+ console.log (typeof myObj) // output : object 
+ console.log (typeof myFun) // output : function 

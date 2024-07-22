@@ -30,6 +30,8 @@ let state ;            // undefined
 
 
 // object 
+// function 
+// array
 
 console.log (typeof "akash")
 console.log (typeof age)

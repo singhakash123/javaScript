@@ -34,7 +34,7 @@ console.log (booleanIsLoggedIn)
 // "" => false 
 // "hitesh" => true 
 
-                                      // conversion into  string 
+                                      // conversion into string 
 
 let someNumber = 33 
 let stringNumber = String (someNumber)

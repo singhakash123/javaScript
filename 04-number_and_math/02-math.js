@@ -1,7 +1,7 @@
 
 // console.log (Math)
-// console.log (Math.abs(-4))
-// console.log (Math.round(4.9))
+// console.log (Math.abs(-4)) // its convert negative value into positive 
+// console.log (Math.round(4.9)) // 
 // console.log (Math.ceil(5.9))
 // console.log (Math.floor(5.3))
 // console.log (Math.min(2,4,6,8,3))
@@ -9,8 +9,8 @@
 
 
 
-// console.log(Math.random())
-// console.log ((Math.random()*10))
+// console.log(Math.random())  // Math.random gives value between 0 to 1
+// console.log ((Math.random()*10)) // 
 // console.log ((Math.random()*10)+1)
 // console.log (Math.floor((Math.random()*10))+1)
 
