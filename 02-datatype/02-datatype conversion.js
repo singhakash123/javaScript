@@ -1,7 +1,12 @@
+// how to know any data type 
+// use type of to know the data type 
+
 let fullName = "akash"
 
 // console.log (typeof fullName)
 // console.log (typeof (fullName))  // by using parantheses 
+
+////////////////// ++++++++++++++++++++++++++++++++  conversion start from here +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
                                         // conversion into number 
 

@@ -3,7 +3,8 @@
 console.log (2>1)
 console.log (2>=1)
 console.log (2<1)
-console.log (2==1)
+console.log(2<=1);
+console.log (2==1) // its check only value not data 
 console.log (2!=1)
 
 
@@ -24,6 +25,6 @@ console.log (null >=0)
   console.log (undefined >=0)
         
 // == or === 
-   // === thiple equal check data type and value
+   // === triple equal check data type and value
   console.log ("2" == 2)
   console.log ('2'===2)

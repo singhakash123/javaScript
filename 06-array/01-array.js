@@ -18,19 +18,19 @@ let expArray = ["akash" , true ,134 ]
 const myArr1 = new Array (1,2,3,5,7)
 
 
-
+// how to access any array value 
 let myArray =[6,5,4,3,2,1]
 // console.log (myArray[3])
 
 
-// array method 
-// myArray.push(7)
-// myArray.pop ()
-// myArray.unshift(10)
-// myArray.shift()
+//                                                                           =======array method 
+// myArray.push(7)      // add in last 
+// myArray.pop ()      // remove last value
+// myArray.unshift(10) // add in the starting point 
+// myArray.shift()     // remove the starting value 
 
-// console.log (myArray.includes(9))
-// console.log (myArray.indexOf(2))
+// console.log (myArray.includes(9)) // it gives you boolean value 
+ console.log (myArray.indexOf(2) , "a")  // find the index no // result is 4
 
 const newArr = myArray.join()  // join method return new array and convert into string 
 // console.log (myArray)

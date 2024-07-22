@@ -7,7 +7,7 @@ let negValue = -value
 // console.log (2*2)  // result : 4
 // console.log (2**3) // result :8  
 // console.log (2/3) //  (division) // rsult :0.66666
-// console.log (2%3)  // (module)   // result : 2
+// console.log (2%3)  // (module)// remainder // result : 2
 
 let str1 = "akash"
 let str2 = " singh"
@@ -31,11 +31,12 @@ console.log (+"")
 let num1 , num2 , num3 
 num1 = num2 = num3 = 2+2
 
-
+//      presidence operator 
 
 let gameCounter =100
  gameCounter ++
  console.log (gameCounter)
+ 
 // prefix presidence opearator and postfix precidence operator 
  let x = 3;
  const y = x++;               

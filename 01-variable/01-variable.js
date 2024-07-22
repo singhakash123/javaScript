@@ -6,7 +6,7 @@ let accountBranch ;   // undefined
 
 
 
-// accountId = 78495858; // not allowed 
+// accountId = 78495858; // not allowed because it is a const 
 accountName = "rohit singh chauhan"
 accountState = "hyd"
 accountCity ="neh"
