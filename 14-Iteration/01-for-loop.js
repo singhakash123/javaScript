@@ -58,7 +58,7 @@ for (let i = 0; i < fruits.length; i++) {
 // banana
 // cherry
 
-// explation of this code 
+ // explation of this code 
 /*
 Initialization: let i = 0 sets the counter i to 0 (the first i of the array).
 Condition: i < fruits.length means the loop will run as long as i is less than the length of the fruits array.

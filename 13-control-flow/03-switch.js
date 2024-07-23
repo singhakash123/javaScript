@@ -1,13 +1,16 @@
 // syntax 
 
-// switch (key) {
-//   case value:
-    
-//     break;
+switch (key) {
+  case value:
+    // Code to execute when key equals value
+    break;
 
-//   default:
-//     break;
-// }
+  default:
+    // Code to execute if key doesn't match any case
+    break;
+}
+// The break; statement is used to exit the switch statement. After executing the code block associated with a case, the break; statement ensures that execution moves out of the switch statement. If break; is omitted, execution will continue into the next case statement, which is known as "fall-through."
+// The default case is optional. It specifies the block of code to execute if key does not match any of the case values. The default case is like the else clause in an if-else statemen
 
 const temprature = 41
 switch (temprature) {

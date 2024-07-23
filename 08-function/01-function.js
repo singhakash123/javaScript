@@ -26,15 +26,17 @@ function addTwoNumber (number1,number2){
      // after return you cant excute any code 
 }
 
-// const printMe = addTwoNumber(5,4)
-// console.log (printMe)
+const printMe = addTwoNumber(5,4)
+console.log (printMe)
 
 
 function loginUserMessage (username){
-   return `${username},welcome to my website`
+  // return `${username},welcome to my website`  // this is not best pratice ,always try to hold in variable and then retun value 
+   let result = `${username},welcome to my website`
+   return result 
 }
-//  const keyReturn=loginUserMessage("hitesh")
-//  console.log (keyReturn)
+ const keyReturn=loginUserMessage("hitesh")
+ console.log (keyReturn)
 
 
 function userMessage(username = "akash singh chauhan" ){
